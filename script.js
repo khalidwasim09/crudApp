@@ -7,7 +7,7 @@ function addTask() {
     if (text === '') return;
 
     const newTask = {
-        id: Date.now(),   // MUST call it
+        id: Date.now(),  
         text: text
     };
 
