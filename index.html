@@ -6,13 +6,27 @@
     <title>Task Manager</title>
 </head>
 <body>
-    <h1>My Task Manager</h1>
 
-    <input type="text" id="input" placeholder="Enter a task...">
-    <button onclick="addTask()">Add task</button>
+    <div id="loginPage">
+        <h2>Who are you ?</h2>
+        <input type="text" id="InputUsername" placeholder="Enter yuor username">
+        <button onclick="login()">Login</button>
+    </div>
 
-    <ul id="taskList"></ul>
+    <div id="appPage" class="hidden">
+        <h1 id="greeting">Hello, Welcome</h1>
+        <button onclick="logout()">Logout</button> <hr>
 
-    <script src="script.js"></script>
+        <input type="text" id="input" placeholder="Enter a task...">
+        <button onclick="addTask()">Add task</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script> 
+    <style>
+    .hidden {
+        display: none !important; /* !important forces it to hide */
+    }
+</style>
 </body>
 </html>
